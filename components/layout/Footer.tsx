@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-4">
-              <Image src="/logo-icon.png" alt="Lane & Company icon" width={50} height={50} />
+              <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo-icon.png`} alt="Lane & Company icon" width={50} height={50} />
               <div>
                 <p className="font-heading text-xl text-white">Lane & Company</p>
                 <p className="text-sm text-warm-gray">Built by Lane & Company</p>

@@ -9,7 +9,10 @@ const nextConfig = {
     unoptimized: true
   },
   basePath: isProduction ? `/${repositoryName}` : '',
-  assetPrefix: isProduction ? `/${repositoryName}/` : ''
+  assetPrefix: isProduction ? `/${repositoryName}/` : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProduction ? `/${repositoryName}` : ''
+  }
 };
 
 module.exports = nextConfig;

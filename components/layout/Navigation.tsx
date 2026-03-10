@@ -35,8 +35,8 @@ export default function Navigation() {
         }`}
       >
         <nav className="container-wide flex h-20 items-center justify-between">
-          <Link href="/" className="relative h-10 w-44">
-            <Image src="/logo-white.png" alt="Lane & Company" fill className="object-contain object-left" priority />
+          <Link href="/" className="flex h-10 items-center">
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo-white.png`} alt="Lane & Company" className="h-10 w-auto object-contain" />
           </Link>
 
           <div className="hidden items-center gap-8 md:flex">
